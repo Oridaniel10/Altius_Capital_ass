@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Colors */
+:root {
+  --blue-dark: #003366;
+  --cream: #e7e1d2;
+}
+
+/* main button */
+.btn-primary {
+  @apply bg-[color:var(--blue-dark)] text-white py-2 px-4 rounded hover:bg-[#002244];
+}
+
+/* secondary button */
+.btn-secondary {
+  @apply bg-gray-500 text-white py-2 px-4 rounded hover:bg-gray-600;
+}
+
+/* input fields */
+.input-field {
+  @apply w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[color:var(--blue-dark)];
+}
+
+/* main card */
+.card {
+  @apply bg-white p-6 rounded shadow-md w-full max-w-md space-y-4;
+}
+
